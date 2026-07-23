@@ -98,7 +98,7 @@ dnf update -y
 dnf install httpd -y
 systemctl start httpd
 systemctl enable httpd
-echo "<html><h1> Welcome to Whizlabs Public Server</h1><html>" >
+echo "<html><h1> Welcome to Public Server</h1><html>" >
 /var/www/html/index.html
 EOF
   tags = {
@@ -162,7 +162,7 @@ resource "aws_instance" "second_vpc_ec2" {
         dnf install httpd -y
         systemctl start httpd
         systemctl enable httpd
-        echo "<html><h1> Welcome to Whizlabs Private Server</h1><html>" > /var/www/html/index.html
+        echo "<html><h1> Welcome to Private Server</h1><html>" > /var/www/html/index.html
         EOF
 
   tags = {
