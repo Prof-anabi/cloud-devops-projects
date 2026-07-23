@@ -156,14 +156,14 @@ Once deployed, you can test cross-VPC connectivity:
    ```bash
    curl http://<public_ec2_instance_public_ip>
    ```
-   You should see: *"Welcome to Whizlabs Public Server"*
+   You should see: *"Welcome to Public Server"*
 
 2. **SSH into the public EC2 instance**, then from there curl the **private EC2 instance** (using its private IP) to verify Transit Gateway connectivity:
    ```bash
    ssh -i MySSHKey.pem ec2-user@<public_ec2_public_ip>
    curl http://<private_ec2_private_ip>
    ```
-   You should see: *"Welcome to Whizlabs Private Server"*
+   You should see: *"Welcome to Private Server"*
 
 ## Notes
 
